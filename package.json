@@ -1,0 +1,23 @@
+{
+  "name": "adopt-me",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mccjoey/adopt-me-v8.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mccjoey/adopt-me-v8/issues"
+  },
+  "homepage": "https://github.com/mccjoey/adopt-me-v8#readme",
+  "devDependencies": {
+    "prettier": "^2.7.1"
+  }
+}
