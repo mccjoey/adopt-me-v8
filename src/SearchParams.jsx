@@ -43,7 +43,13 @@ const SearchParams = () => {
 
         <label htmlFor="location">
           Location
-          <input id="location" name="location" placeholder="Location" />
+          <input
+            id="location"
+            type="text"
+            name="location"
+            placeholder="Location"
+            className="search-input"
+          />
         </label>
         <label htmlFor="animal">
           Animal
@@ -57,6 +63,7 @@ const SearchParams = () => {
             onBlur={(e) => {
               setAnimal(e.target.value);
             }}
+            className="search-input"
           >
             <option />
             {ANIMALS.map((animal) => (
@@ -66,14 +73,21 @@ const SearchParams = () => {
         </label>
         <label htmlFor="breed">
           Breed
-          <select id="breed" name="breed" disabled={breeds.length === 0}>
+          <select
+            id="breed"
+            name="breed"
+            disabled={breeds.length === 0}
+            className="search-input grayed-out-disabled"
+          >
             <option />
             {breeds.map((breed) => (
               <option key={breed}>{breed}</option>
             ))}
           </select>
         </label>
-        <button className="rounded px-6 py-2 color text-white hover:opacity-50 border-none bg-orange-500">Submit</button>
+        <button className="color rounded border-none bg-orange-500 px-6 py-2 text-white hover:opacity-50">
+          Submit
+        </button>
       </form>
       <Results pets={pets} />;
     </div>
